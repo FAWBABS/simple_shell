@@ -2,7 +2,7 @@
 
 /**
  * strcat_cd - Function that concatenates the message for cd error
- * @datash: data relevant (directory)
+ * @datash: Data relevant (directory)
  * @msg: Message to print
  * @error: Output message
  * @ver_str: Counter lines
