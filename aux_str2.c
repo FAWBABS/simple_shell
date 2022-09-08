@@ -19,7 +19,7 @@ char *_strdup(const char *s)
 	return (new);
 }
 
-/*
+/**
  * _strlen - Returns the lenght of a string
  * @s: Type char pointer
  * Return: Always 0
