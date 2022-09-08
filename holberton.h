@@ -1,5 +1,5 @@
-#ifndef _MAIN_H_
-#define _MAIN_H_
+#ifndef _HOLBERTON_
+#define _HOLBERTON_
 
 #include <stdio.h>
 #include <unistd.h>
@@ -21,16 +21,15 @@ extern char **environ;
 
 
 /**
- * struct data - Struct that contains all relevant data on runtime
- * @av: Argument vector
- * @input: Command line written by the user
- * @args: Tokens of the command line
- * @status: Last status of the shell
- * @counter: Lines counter
- * @_environ: Environment variable
- * @pid: Process ID of the shell
+ * struct data - struct that contains all relevant data on runtime
+ * @av: argument vector
+ * @input: command line written by the user
+ * @args: tokens of the command line
+ * @status: last status of the shell
+ * @counter: lines counter
+ * @_environ: environment variable
+ * @pid: process ID of the shell
  */
-
 typedef struct data
 {
 	char **av;
@@ -43,12 +42,11 @@ typedef struct data
 } data_shell;
 
 /**
- * struct sep_list_s - Single linked list
+ * struct sep_list_s - single linked list
  * @separator: ; | &
- * @next: Next node
- * Description: Single linked list to store separators
+ * @next: next node
+ * Description: single linked list to store separators
  */
-
 typedef struct sep_list_s
 {
 	char separator;
@@ -56,12 +54,11 @@ typedef struct sep_list_s
 } sep_list;
 
 /**
- * struct line_list_s - Single linked list
- * @line: Command line
- * @next: Next node
- * Description: Single linked list to store command lines
+ * struct line_list_s - single linked list
+ * @line: command line
+ * @next: next node
+ * Description: single linked list to store command lines
  */
-
 typedef struct line_list_s
 {
 	char *line;
@@ -69,14 +66,13 @@ typedef struct line_list_s
 } line_list;
 
 /**
- * struct r_var_list - Single linked list
- * @len_var: Length of the variable
- * @val: Value of the variable
- * @len_val: Length of the value
- * @next: Next node
- * Description: Single linked list to store variables
+ * struct r_var_list - single linked list
+ * @len_var: length of the variable
+ * @val: value of the variable
+ * @len_val: length of the value
+ * @next: next node
+ * Description: single linked list to store variables
  */
-
 typedef struct r_var_list
 {
 	int len_var;
@@ -86,11 +82,10 @@ typedef struct r_var_list
 } r_var;
 
 /**
- * struct builtin_s - Builtin struct for command args
+ * struct builtin_s - Builtin struct for command args.
  * @name: The name of the command builtin i.e cd, exit, env
- * @f: Data type pointer function.
+ * @f: data type pointer function.
  */
-
 typedef struct builtin_s
 {
 	char *name;
